@@ -1,0 +1,37 @@
+/* Accueil Header  */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+
+    .logo {
+        font-size: 36px;
+    }
+}
+
+
+
+/* Page Header */
+
+.page-header {
+
+    .page-header-content {
+       position: relative;
+        margin: 0 20px;
+        width: 100%;
+       .logo {
+        text-align: center;
+       }
+
+       .arrow-back {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        height: 40px;
+       }
+
+    }
+}

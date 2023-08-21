@@ -1,0 +1,100 @@
+@import "accueil.scss";
+@import "page.scss";
+@import "header.scss";
+@import "footer.scss";
+
+
+/* Propriétés communes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+
+/* Btn */ 
+
+.btn {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px; 
+    font-weight: 500;
+    padding: 15px 19px;
+    border-radius: 25px;
+    background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    transition: 1s;
+    width: max-content;
+    margin: auto;
+}
+.btn:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.btn-page {
+    margin-bottom: 40px;
+}
+.btn-page .btn {
+    display: block;
+    padding: 15px 50px;
+}
+
+/* Heart */
+.heart-content {
+    position: relative;
+    width: 22px;
+    height: 21px;
+
+    .heart {
+        height: 21px;
+        width: 22px;
+        position: absolute;
+        transform: translate(-51%, -50%);
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+    }
+    
+    .heart-liked {
+        height: 0;
+        width: 0;
+        transition: all 0.3s linear;
+    }
+
+}
+
+.heart-content:hover {
+
+        .heart-liked {
+            height: 21px;
+            width: 22px;
+        }
+
+}
+
+
