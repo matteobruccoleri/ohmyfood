@@ -8,7 +8,7 @@
     z-index: 100;
     animation: linear 3s loading-animation;
     top: 0;
-
+    left: 100%; 
 }
 
 .loading-logo {
@@ -19,17 +19,22 @@
     align-items: center;
     justify-content: center;   
 }
-/*
+
 @keyframes loading-animation {
     0% {
+        left: -100%;
+    }
+    33% {
         left: 0%;
     }
-
+    66% {
+        left: 0%;
+    }
     100% {
         left: 100%;
     }
 }
-*/
+/********/
 .accueil h2 {
     font-size: 24px;
     font-weight: 700;
