@@ -1,14 +1,23 @@
 @charset "UTF-8";
 /* loading */
 .loading {
-  background-color: #353535;
+  background-color: #000;
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: 100;
-  animation: linear 3s loading-animation;
+  animation: 3s loading-animation;
   top: 0;
   left: 100%;
+  transition: linear;
+}
+
+.loading-content {
+  background-color: #353535;
+  width: 100%;
+  position: absolute;
+  animation: 3s loading-content-animation;
+  transition: ease-in-out;
 }
 
 .loading-logo {
@@ -21,6 +30,17 @@
 }
 
 @keyframes loading-animation {
+  0% {
+    left: 0%;
+  }
+  66% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes loading-content-animation {
   0% {
     left: -100%;
   }
