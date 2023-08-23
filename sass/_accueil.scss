@@ -25,8 +25,16 @@
     display: flex;
     align-items: center;
     justify-content: center;   
+    
 }
-
+.loading-logo svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 3s loading-logo-animation;
+}
+/* Animation Loading */
 @keyframes loading-animation {
     0% {
         left: 0%;
@@ -49,9 +57,22 @@
         left: 0%;
     }
     100% {
-        left: 100%;
+        left: 20%;
     }
 }
+@keyframes loading-logo-animation {
+    0% {
+        transform: translate(-50%, 0%);
+    }
+    50% {
+        transform: translate(-50%, 0%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+
 /********/
 .accueil h2 {
     font-size: 24px;
