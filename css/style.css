@@ -8,6 +8,8 @@
   z-index: 100;
   -webkit-animation: ease-in-out 3s loading-animation;
           animation: ease-in-out 3s loading-animation;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   top: 0;
   left: 100%;
 }
@@ -64,6 +66,7 @@
   }
   100% {
     left: 100%;
+    display: none;
   }
 }
 @keyframes loading-animation {
@@ -75,6 +78,7 @@
   }
   100% {
     left: 100%;
+    display: none;
   }
 }
 @-webkit-keyframes loading-content-animation {
@@ -84,8 +88,11 @@
   66% {
     left: 0%;
   }
-  100% {
+  85% {
     left: 10%;
+  }
+  100% {
+    left: 0%;
   }
 }
 @keyframes loading-content-animation {
@@ -95,8 +102,11 @@
   66% {
     left: 0%;
   }
-  100% {
+  85% {
     left: 10%;
+  }
+  100% {
+    left: 0%;
   }
 }
 @-webkit-keyframes loading-logo-animation {
@@ -872,8 +882,8 @@ a {
   height: 21px;
   width: 22px;
   position: absolute;
-  -webkit-transform: translate(-51%, -50%);
-          transform: translate(-51%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   z-index: 2;

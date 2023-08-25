@@ -7,6 +7,7 @@
     width: 100%;
     z-index: 100;
     animation: ease-in-out 3s loading-animation;
+    animation-fill-mode: both;
     top: 0;
     left: 100%;
 }
@@ -56,6 +57,7 @@
     }
     100% {
         left: 100%;
+        display: none;
     }
 }
 @keyframes loading-content-animation {
@@ -65,9 +67,13 @@
     66% {
         left: 0%;
     }
-    100% {
+    85% {
         left: 10%;
     }
+    100% {
+        left: 0%;
+    }
+    
 }
 @keyframes loading-logo-animation {
     0% {
@@ -86,9 +92,12 @@
 
 
 /********/
-.accueil h2 {
-    font-size: 24px;
-    font-weight: 700;
+.accueil  {
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
 }
 
 .location {
