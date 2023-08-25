@@ -536,62 +536,33 @@ footer .footer-content .footer-text .footer-link i {
   font-weight: 700;
 }
 
-/******************animation entrees plats desserts ***********************/
-.entrees, .plats, .desserts {
-  -webkit-animation: 2s entrees-plats-desserts-animation;
-          animation: 2s entrees-plats-desserts-animation;
+/******************animation entrees,plats,desserts et choix ***********************/
+.entrees, .plats, .desserts, .choix-1, .choix-2, .choix-3, .choix-4 {
+  -webkit-animation: 2s restaurant-menu-animation;
+          animation: 2s restaurant-menu-animation;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
 
+/* animation delay entrees */
 .entrees {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
+/* animation delay plats  */
 .plats {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 
+/* animation delay desserts  */
 .desserts {
   -webkit-animation-delay: 3.5s;
           animation-delay: 3.5s;
 }
 
-@-webkit-keyframes entrees-plats-desserts-animation {
-  0% {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-@keyframes entrees-plats-desserts-animation {
-  0% {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-    opacity: 1;
-  }
-}
 /******************animation restaurant-choix ***********************/
-.choix-1, .choix-2, .choix-3, .choix-4 {
-  -webkit-animation: 2s restaurant-choix-animation;
-          animation: 2s restaurant-choix-animation;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
 /* animation delay entrees choix */
 .entrees .choix-1 {
   -webkit-animation-delay: 0.5s;
@@ -655,7 +626,7 @@ footer .footer-content .footer-text .footer-link i {
           animation-delay: 5s;
 }
 
-@-webkit-keyframes restaurant-choix-animation {
+@-webkit-keyframes restaurant-menu-animation {
   0% {
     -webkit-transform: translateY(50%);
             transform: translateY(50%);
@@ -668,7 +639,7 @@ footer .footer-content .footer-text .footer-link i {
   }
 }
 
-@keyframes restaurant-choix-animation {
+@keyframes restaurant-menu-animation {
   0% {
     -webkit-transform: translateY(50%);
             transform: translateY(50%);

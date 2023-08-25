@@ -89,39 +89,27 @@
 
 }
 
-/******************animation entrees plats desserts ***********************/
+/******************animation entrees,plats,desserts et choix ***********************/
 
-.entrees, .plats, .desserts {
-    animation: 2s entrees-plats-desserts-animation;
+.entrees, .plats, .desserts, .choix-1, .choix-2, .choix-3, .choix-4 {
+    animation: 2s restaurant-menu-animation;
     animation-fill-mode: both;
 }
+/* animation delay entrees */
 .entrees {
     animation-delay: 0.5s;
 }
+/* animation delay plats  */
 .plats {
     animation-delay: 2s;
 }
+/* animation delay desserts  */
 .desserts {
     animation-delay: 3.5s;
 }
-@keyframes entrees-plats-desserts-animation {
-    0% {
-        transform: translateY(50%);
-        opacity: 0;
-       
-    }
-    100% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
 
 /******************animation restaurant-choix ***********************/
-.choix-1, .choix-2, .choix-3, .choix-4  {
 
-    animation: 2s restaurant-choix-animation;
-    animation-fill-mode: both;
-}
 /* animation delay entrees choix */
 .entrees .choix-1 {
     animation-delay: 0.5s;
@@ -165,7 +153,7 @@
 }
 
 
-@keyframes restaurant-choix-animation {
+@keyframes restaurant-menu-animation {
     0% {
         transform: translateY(50%);
         opacity: 0;
@@ -175,7 +163,6 @@
         opacity: 1;
     }
 }
-
 
 /*******************************************************************/
 @media all and (min-width: 768px) {
