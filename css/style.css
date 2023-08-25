@@ -47,7 +47,7 @@
   -webkit-animation: 3s loading-logo-animation;
   animation: 3s loading-logo-animation;
   height: auto;
-  width: 20rem;
+  width: 18rem;
 }
 
 .loading-logo .logo-svg path {
@@ -536,6 +536,151 @@ footer .footer-content .footer-text .footer-link i {
   font-weight: 700;
 }
 
+/******************animation entrees plats desserts ***********************/
+.entrees, .plats, .desserts {
+  -webkit-animation: 2s entrees-plats-desserts-animation;
+          animation: 2s entrees-plats-desserts-animation;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.entrees {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.plats {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.desserts {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+@-webkit-keyframes entrees-plats-desserts-animation {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes entrees-plats-desserts-animation {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+/******************animation restaurant-choix ***********************/
+.choix-1, .choix-2, .choix-3, .choix-4 {
+  -webkit-animation: 2s restaurant-choix-animation;
+          animation: 2s restaurant-choix-animation;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+/* animation delay entrees choix */
+.entrees .choix-1 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.entrees .choix-2 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.entrees .choix-3 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.entrees .choix-4 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+/* animation delay plats choix */
+.plats .choix-1 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.plats .choix-2 {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.plats .choix-3 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.plats .choix-4 {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+/* animation delay desserts choix */
+.desserts .choix-1 {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.desserts .choix-2 {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.desserts .choix-3 {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.desserts .choix-4 {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+@-webkit-keyframes restaurant-choix-animation {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes restaurant-choix-animation {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+/*******************************************************************/
 @media all and (min-width: 768px) {
   .restaurant-img-titre .restaurant-titre .restaurant-titre-heart {
     -webkit-box-pack: center;
