@@ -49,6 +49,7 @@
         margin: auto;
 
         .restaurant-menu-titre {
+            width: max-content;
             
             h3 {
                 font-family: "Roboto";
@@ -61,7 +62,7 @@
                 display: block;
                 width: 40px;
                 height: 3px;
-                background: #99E2D0;
+                background: $sub-lign-color;
                 margin-top: 5px;
             }
         }   
@@ -77,11 +78,17 @@
                 cursor: pointer;
             }
 
-            div{
+            .restaurant-choix-content {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 margin-top: 5px;
+ 
+                p {
+                    white-space: nowrap;
+                    overflow: hidden;  
+                    text-overflow: ellipsis;
+                }
 
                 span {
                     font-weight: 700;
