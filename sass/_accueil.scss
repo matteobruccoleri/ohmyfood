@@ -255,8 +255,7 @@
 
 }
 
-
-/* tablet */
+/* @media */
 @media all and (min-width: 768px) {
 
 .call-to-action {
@@ -295,24 +294,9 @@
 
         }
     }
-    
-    footer {
-        .footer-content {
-            flex-direction: inherit;
-            justify-content: flex-end;
-            align-items: center;
-    
-            a {
-                order: 2;
-            }
-            .footer-text {
-                flex-direction: inherit;
-            }
-        }
-    }
+
 }
 
-/* Desktop */
 @media all and (min-width: 1440px) {
 
     .fonctionnement, .restaurants {
