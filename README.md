@@ -1,4 +1,4 @@
-# [OhMyFood](https://matteobruccoleri.github.io/ohmyfood/) 🙄
+# [OhMyFood](https://matteobruccoleri.github.io/ohmyfood/) 👀
 
 Projet 3 de la formation OpenClassRooms développeur d'application Javascript React !
 
