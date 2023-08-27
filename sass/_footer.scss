@@ -14,22 +14,24 @@ footer {
         .footer-text {
             gap: 7px;
             
-            a {
-                color: #FFF;
-                font-size: 16px;
-                font-weight: 500;
-            }
-            .footer-link {
+            div {
                 display: flex;
-                align-items: center;
-                gap: 11px;
+                flex-direction: column;
+                gap: 7px;  
 
-                i {
-                    font-size: 13px;  
-                    width: 12px;          
+                a {
+                    color: #FFF;
+                    font-size: 16px;
+                    font-weight: 400;
                 }
-
+                .footer-link {
+                    display: flex;
+                    align-items: center;
+                    gap: 11px;
+                    font-weight: 500;
+                }
             }
+
         } 
 
     }
@@ -38,15 +40,28 @@ footer {
 
 @media all and (min-width: 768px) {
 
+        
     footer {
-        padding: 30px 25px;
-    }
+        .footer-content {
+            flex-direction: inherit;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 25px;
+            gap: 40px;
+    
+            a {
+                order: 2;
+            }
+            .footer-text {
+                flex-direction: inherit;
+                gap: 30px;
 
-    footer .footer-content {
-        gap: 40px;
-    }
-    footer .footer-content .footer-text {
-        gap: 20px;
+                div {
+                    flex-direction: initial;
+                    gap: 10px;
+                }
+            }
+        }
     }
 
 }
@@ -58,5 +73,14 @@ footer {
     }
     footer .footer-content {
         gap: 80px;
+    }
+    footer .footer-content .footer-text {
+        gap: 60px;
+
+        div {
+            flex-direction: initial;
+            gap: 20px;
+        }
+
     }
 }
