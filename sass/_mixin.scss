@@ -1,18 +1,8 @@
 /* Mixin */
 
-/* Mise en forme du h1 */
-@mixin header-title-h1 {
-    color: #101010;
-    font-size: 30px;
-}
-
-/* Mise en forme des h3 de la page d'accueil */
-@mixin accueil-title-h3 {
-    color: #000;
-    font-size: 24px;
-    font-weight: 700;
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 
-/* Mise en forme des h2 des pages restaurants */
- 

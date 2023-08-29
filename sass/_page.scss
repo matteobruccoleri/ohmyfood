@@ -37,13 +37,11 @@
 .restaurant-menu {
     background-color: #F6F6F6;
     padding-top: 40px;   
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 40px;
 
     section {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         gap: 12px;
         width: 90%;
         margin: auto;
@@ -62,11 +60,10 @@
                 display: block;
                 width: 40px;
                 height: 3px;
-                background: $sub-lign-color;
+                background: $secondary;
                 margin-top: 5px;
             }
         }   
-
 
         .restaurant-choix {
             background-color: #FFF;
@@ -79,9 +76,8 @@
             text-overflow: ellipsis;
         
             .restaurant-choix-text {
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column;
+                @include flex-column;
+                justify-content: space-between;               
                 gap: 5px;
                 padding: 15px 0 15px 15px;
                 white-space: nowrap;
