@@ -135,7 +135,7 @@
 }
 
 
-/******************animation entrees,plats,desserts et choix ***********************/
+/****************** Animation entrees,plats,desserts et choix ***********************/
 
 .entrees, .plats, .desserts, .choix-1, .choix-2, .choix-3, .choix-4 {
     animation: 2s restaurant-menu-animation;
@@ -154,7 +154,7 @@
     animation-delay: 3.5s;
 }
 
-/******************animation restaurant-choix ***********************/
+/****************** Animation restaurant-choix ***********************/
 
 /* animation delay entrees choix */
 .entrees .choix-1 {
@@ -211,6 +211,17 @@
 }
 
 /*******************************************************************/
+
+/*************** @Media Queries ***************/
+@media all and (max-width: 374.9px) {
+
+    .restaurant-choix-text p, .restaurant-choix-text h4 {
+        font-size: 11px;
+    }
+
+}
+
+
 @media all and (min-width: 768px) {
 
     .restaurant-img-titre .restaurant-titre .restaurant-titre-heart{

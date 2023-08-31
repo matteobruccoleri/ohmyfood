@@ -120,25 +120,32 @@
 .location {
     height: 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     background-color: #EAEAEA;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     
+    .location-shadow {       
+        background-color: #fff;
+        height: 6px;
+        width: 100%;
+        box-shadow: 0px 4px 6px -1px rgba(0,0,0,.15);
+    }
     .location-text {
         display: flex;
         gap: 17px;
         font-family: 'Roboto', sans-serif;
+        margin: auto 0;
 
-        p {
-            font-size: 16px;
-            color: #353535;
-            font-weight: 500;
+         p {
+                font-size: 16px;
+                color: #353535;
+                font-weight: 500;
         }
         
     }
+    
 }
- 
 .call-to-action {
     background-color: #F6F6F6;
     text-align: center;
