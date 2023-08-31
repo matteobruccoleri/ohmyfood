@@ -20,7 +20,7 @@
 
         .restaurant-titre-heart {
             display: flex;
-            justify-content: space-between;
+            gap: 15px;
             align-items: center;
             width: 90%;
             margin: auto;
@@ -223,6 +223,9 @@
 
 /*************** @Media Queries ***************/
 @media all and (min-width: 375px) {
+            .restaurant-img-titre .restaurant-titre .restaurant-titre-heart {
+                gap: 30px;
+            }
 
             .restaurant-img-titre .restaurant-titre .restaurant-titre-heart h2 {
                     font-size: 28px;
@@ -241,7 +244,6 @@
 
     .restaurant-img-titre .restaurant-titre .restaurant-titre-heart{
         justify-content: center;
-        gap: 30px;
     }
 
     .restaurant-img-titre .restaurant-titre {
