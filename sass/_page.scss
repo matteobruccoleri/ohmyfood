@@ -27,7 +27,7 @@
 
             h2 {
                 color: #101010;
-                font-size: 28px;
+                font-size: 26px;
                 font-weight: 400;
             }
         }
@@ -74,6 +74,7 @@
             white-space: nowrap;
             overflow: hidden;  
             text-overflow: ellipsis;
+            gap: 10px;
         
             .restaurant-choix-text {
                 @include flex-column;
@@ -91,10 +92,10 @@
                 }
 
                 h4 {
-                    font-size: 12px;
+                    font-size: 15px;
                 }
                 p {
-                    font-size: 11px;
+                    font-size: 12px;
                 }
 
             }
@@ -105,8 +106,9 @@
 
                 span {
                     font-weight: 700;
+                    font-size: 15px;
                     margin-bottom: 15px;
-                    padding: 0 15px 0 10px;
+                    padding-right: 10px;
                     text-align: center;
                 }
                 .check {
@@ -220,16 +222,16 @@
 /*******************************************************************/
 
 /*************** @Media Queries ***************/
-@media all and (max-width: 374px) {
+@media all and (min-width: 375px) {
 
-            .restaurant-titre-heart h2 {
-                    font-size: 26px !important;
-                } 
-            .restaurant-choix-text h4 {
-                font-size: 14px !important;
+            .restaurant-img-titre .restaurant-titre .restaurant-titre-heart h2 {
+                    font-size: 28px;
+            } 
+            .restaurant-menu section .restaurant-choix .restaurant-choix-text h4 {
+                font-size: 16px;
             }                    
-            .restaurant-choix-text p {
-                font-size: 11px !important;
+            .restaurant-menu section .restaurant-choix .restaurant-choix-text p {
+                font-size: 14px;
             }
         }
 
@@ -256,6 +258,13 @@
     .restaurant-menu section {
         width: 80%;
         margin: auto;
+    }
+
+    .restaurant-menu section .restaurant-choix .restaurant-choix-text h4 {
+        font-size: 18px;
+    }                    
+    .restaurant-menu section .restaurant-choix .restaurant-choix-text p {
+        font-size: 15px;
     }
 
 }

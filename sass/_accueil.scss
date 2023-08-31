@@ -273,15 +273,19 @@
 /* @media queries */
 @media all and (min-width: 768px) {
 
-.call-to-action {
-    .call-to-action-content {
-        @include flex-column;
-        gap: 18px;
-
-        h2 {
-            font-size: 40px;
-        }
+    .location-shadow {
+        display: none;
     }
+
+    .call-to-action {
+        .call-to-action-content {
+            @include flex-column;
+            gap: 18px;
+
+            h2 {
+                font-size: 40px;
+            }
+        }
 }
     .fonctionnement-categories {
         flex-direction: inherit;
