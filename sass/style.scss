@@ -85,17 +85,18 @@ a {
 /* Heart */
 .heart-content { 
     position: relative;  
-    height: 21px;
-    width: 22px;
+    height: 25px;
+    width: 25px;
 
     .heart {
-        height: 21px;
+        height: 22px;
         width: 22px;
         position: absolute;
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
-        z-index: 2;
+        z-index: 1;
+        object-fit: contain;
     }
     
     .heart-liked {
@@ -108,8 +109,9 @@ a {
 
 .heart-content:hover {
         .heart-liked {
-            height: 21px;
-            width: 22px;
+            height: 24px;
+            width: 24px;
+            z-index: 2;
         }
 
 }
