@@ -28,7 +28,7 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-animation: 3s loading-logo-animation;
-    animation: s loading-logo-animation;
+    animation: 3s loading-logo-animation;
     height: 4rem;
     width: 20rem;
     overflow: hidden;
@@ -42,11 +42,12 @@
     -webkit-animation: 3s loading-logo-animation;
     animation: 3s loading-logo-animation;
     height: auto;
-    width: 18rem;
+    width: 18rem; 
 }
-.loading-logo .logo-svg path {
+.logo-svg path {
     fill: #fff;
 }
+
 /* Animation Loading */
 @keyframes loading-animation {
     0% {
@@ -90,6 +91,21 @@
     }
 }
 
+@keyframes loading-svg-path {
+    0% {
+        transform: translateY(50%);
+    }
+    20% {
+        transform: translateY(50%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+
+}
 
 /********/
 .accueil  {
@@ -104,26 +120,32 @@
 .location {
     height: 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     background-color: #EAEAEA;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     
+    .location-shadow {       
+        background-color: #fff;
+        height: 6px;
+        width: 100%;
+        box-shadow: 0px 4px 6px -1px rgba(0,0,0,.15);
+    }
     .location-text {
         display: flex;
         gap: 17px;
         font-family: 'Roboto', sans-serif;
+        margin: auto 0;
 
-        p {
-            font-size: 16px;
-            color: #353535;
-            font-weight: 500;
+         p {
+                font-size: 16px;
+                color: #353535;
+                font-weight: 500;
         }
         
     }
+    
 }
- 
-
 .call-to-action {
     background-color: #F6F6F6;
     text-align: center;
@@ -134,8 +156,7 @@
     gap: 25px;
     
     .call-to-action-content {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         gap: 10px;
         
         p {
@@ -157,9 +178,7 @@
 
 }
 .fonctionnement-categories {
-
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 25px;
     margin-top: 25px;
     padding-left: 12px;
@@ -181,7 +200,7 @@
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: $numero-bg-color;
+    background-color: $primary;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,7 +216,6 @@
     font-weight: 500;
 }
 
- 
 /* Restaurants*/
 .restaurants {
     background-color: #F6F6F6;
@@ -211,8 +229,7 @@
 
 }
 .restaurants-categories {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 25px;
     margin-top: 25px;
 
@@ -224,7 +241,7 @@
         position: relative;
 
         .nouveau-restaurant {
-            background-color: #99E2D0;
+            background-color: $secondary;
             color: #008766;
             padding: 10px 20px;
             width: max-content;
@@ -250,34 +267,26 @@
             padding: 15px;
             color: #000;
         }
-
     }    
-
 }
 
-/* @media */
+/* @media queries */
 @media all and (min-width: 768px) {
 
 .call-to-action {
-
     .call-to-action-content {
-
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         gap: 18px;
 
         h2 {
             font-size: 40px;
         }
-
     }
 }
     .fonctionnement-categories {
         flex-direction: inherit;
         gap: 35px;
     }
-
-
     .restaurants-categories {
         flex-direction: inherit;
         gap: 50px;
@@ -291,10 +300,8 @@
                 top: 20px;
                 right: 20px;
             }
-
         }
     }
-
 }
 
 @media all and (min-width: 1440px) {
@@ -302,5 +309,4 @@
     .fonctionnement, .restaurants {
         padding: 50px 180px;
     }
-
 }

@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
 }
-
+ 
 body {
     font-family: 'Roboto', sans-serif;
     position: relative;
@@ -62,7 +62,7 @@ a {
         height: 100%;
         top: 0;
         left: 0;
-        transition: 0.5s ease-in-out;
+        transition: 0.3s ease-in-out;
         opacity: 0;
     }
 }
@@ -84,9 +84,9 @@ a {
 
 /* Heart */
 .heart-content { 
-    position: relative;
-    width: 22px;
+    position: relative;  
     height: 21px;
+    width: 22px;
 
     .heart {
         height: 21px;
@@ -107,7 +107,6 @@ a {
 }
 
 .heart-content:hover {
-
         .heart-liked {
             height: 21px;
             width: 22px;

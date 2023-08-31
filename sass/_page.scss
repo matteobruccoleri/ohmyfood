@@ -37,13 +37,11 @@
 .restaurant-menu {
     background-color: #F6F6F6;
     padding-top: 40px;   
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 40px;
 
     section {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         gap: 12px;
         width: 90%;
         margin: auto;
@@ -62,11 +60,10 @@
                 display: block;
                 width: 40px;
                 height: 3px;
-                background: $sub-lign-color;
+                background: $secondary;
                 margin-top: 5px;
             }
         }   
-
 
         .restaurant-choix {
             background-color: #FFF;
@@ -79,9 +76,8 @@
             text-overflow: ellipsis;
         
             .restaurant-choix-text {
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column;
+                @include flex-column;
+                justify-content: space-between;               
                 gap: 5px;
                 padding: 15px 0 15px 15px;
                 white-space: nowrap;
@@ -139,7 +135,7 @@
 }
 
 
-/******************animation entrees,plats,desserts et choix ***********************/
+/****************** Animation entrees,plats,desserts et choix ***********************/
 
 .entrees, .plats, .desserts, .choix-1, .choix-2, .choix-3, .choix-4 {
     animation: 2s restaurant-menu-animation;
@@ -158,7 +154,7 @@
     animation-delay: 3.5s;
 }
 
-/******************animation restaurant-choix ***********************/
+/****************** Animation restaurant-choix ***********************/
 
 /* animation delay entrees choix */
 .entrees .choix-1 {
@@ -215,6 +211,17 @@
 }
 
 /*******************************************************************/
+
+/*************** @Media Queries ***************/
+@media all and (max-width: 374.9px) {
+
+    .restaurant-choix-text p, .restaurant-choix-text h4 {
+        font-size: 11px;
+    }
+
+}
+
+
 @media all and (min-width: 768px) {
 
     .restaurant-img-titre .restaurant-titre .restaurant-titre-heart{
