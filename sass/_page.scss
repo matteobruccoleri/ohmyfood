@@ -84,10 +84,17 @@
                 overflow: hidden;  
                 text-overflow: ellipsis;
 
-                h4,p {
+                h4, p {
                     white-space: nowrap;
                     overflow: hidden;  
                     text-overflow: ellipsis;
+                }
+
+                h4 {
+                    font-size: 12px;
+                }
+                p {
+                    font-size: 11px;
                 }
 
             }
@@ -99,7 +106,7 @@
                 span {
                     font-weight: 700;
                     margin-bottom: 15px;
-                    width: 65px;
+                    padding: 0 15px 0 10px;
                     text-align: center;
                 }
                 .check {
@@ -213,13 +220,19 @@
 /*******************************************************************/
 
 /*************** @Media Queries ***************/
-@media all and (max-width: 374.9px) {
+@media all and (max-width: 374px) {
 
-    .restaurant-choix-text p, .restaurant-choix-text h4 {
-        font-size: 11px;
-    }
+            .restaurant-titre-heart h2 {
+                    font-size: 26px !important;
+                } 
+            .restaurant-choix-text h4 {
+                font-size: 14px !important;
+            }                    
+            .restaurant-choix-text p {
+                font-size: 11px !important;
+            }
+        }
 
-}
 
 
 @media all and (min-width: 768px) {
