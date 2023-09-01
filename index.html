@@ -44,7 +44,12 @@
             <div class="call-to-action-content">
                 <h2>Réservez le menu qui vous&nbsp;convient</h2>
                 <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-                <a class="btn" href="#"><span class="filter-bg"></span>Explorer nos restaurants</a>
+                <button type="button">
+                    <a class="btn" href="#restaurants" title="Explorer nos restaurants">
+                        <span class="filter-bg"></span>Explorer nos restaurants
+                    </a>
+                </button>
+                
             </div>
         </section>
         <section class="fonctionnement">
@@ -69,21 +74,24 @@
                 </div>
             </div>
         </section>
-        <section class="restaurants">
+        <section class="restaurants" id="restaurants">
             <div class="restaurants-content">
                 <h3>Restaurants</h3>
                 <div class="restaurants-categories">
                     <article>
-                        <a class="restaurant-content" href="restaurants/la-palette-du-gout.html" title="La palette du goût">
+                        <a class="restaurant-link" href="restaurants/la-palette-du-gout.html" title="La palette du goût">
                             <img src="img/restaurants/lapalettedugout.jpg" alt="La palette du goût">
                             <div class="nouveau-restaurant">
                                 <p>Nouveau</p>
                             </div>
+                        </a>
                             <div class="restaurant-text">
-                                <div>
-                                    <h3>La palette du goût</h3>
-                                    <p>Ménilmontant</p>
-                                </div>
+                                <a class="restaurant-link" href="restaurants/la-palette-du-gout.html" title="La palette du goût">
+                                    <div>
+                                        <h3>La palette du goût</h3>
+                                        <p>Ménilmontant</p>
+                                    </div>
+                                </a>
                                 <div class="heart-content">
                                     <img class="heart" src="img/icon/heart.svg" alt="heart">                             
                                     <img class="heart heart-liked" src="img/icon/heart-liked.svg" alt="heart liked">
@@ -92,11 +100,12 @@
                         </a>                                   
                     </article>
                     <article>
-                        <a class="restaurant-content" href="restaurants/la-note-enchantee.html" title="La note enchantée">
+                        <a class="restaurant-link" href="restaurants/la-note-enchantee.html" title="La note enchantée">
                             <div class="nouveau-restaurant">
                                 <p>Nouveau</p>
                             </div>
                             <img src="img/restaurants/lanoteenchantee.jpg" alt="La note enchantée">
+                        </a>
                             <div class="restaurant-text">
                                 <div>
                                     <h3>La note enchantée</h3> 
@@ -110,13 +119,17 @@
                         </a>
                     </article>
                     <article>
-                        <a class="restaurant-content" href="restaurants/a-la-francaise.html" title="À la française">
-                            <img src="img/restaurants/alafrancaise.jpg" alt="À la française">
+                        <a class="restaurant-link" href="restaurants/a-la-francaise.html" title="À la française">
+                            <img src="img/restaurants/alafrancaise.jpg" alt="À la française">                      
+                        </a>
                             <div class="restaurant-text">
-                                <div>
-                                    <h3>À la française</h3>
-                                    <p>Cité Rouge</p>
-                                </div>
+                                <a class="restaurant-link" href="restaurants/a-la-francaise.html" title="À la française">
+
+                                    <div>
+                                        <h3>À la française</h3>
+                                        <p>Cité Rouge</p>
+                                    </div>
+                                </a>
                                 <div class="heart-content">
                                     <img class="heart" src="img/icon/heart.svg" alt="heart">                             
                                     <img class="heart heart-liked" src="img/icon/heart-liked.svg" alt="heart liked">
@@ -125,19 +138,21 @@
                         </a>
                     </article>
                     <article>
-                        <a class="restaurant-content" href="restaurants/le-delice-des-sens.html" title="Le délice des sens">
+                        <a class="restaurant-link" href="restaurants/le-delice-des-sens.html" title="Le délice des sens">
                             <img src="img/restaurants/ledelicedessens.jpg" alt="Le délice des sens">
+                        </a>
                             <div class="restaurant-text">
-                                <div>
-                                    <h3>Le délice des sens</h3>
-                                    <p>Folie-Méricourt</p>
-                                </div>                      
+                                <a class="restaurant-link" href="restaurants/le-delice-des-sens.html" title="Le délice des sens">
+                                    <div>
+                                        <h3>Le délice des sens</h3>
+                                        <p>Folie-Méricourt</p>
+                                    </div>  
+                                </a>                    
                                 <div class="heart-content">
                                     <img class="heart" src="img/icon/heart.svg" alt="heart">                             
                                     <img class="heart heart-liked" src="img/icon/heart-liked.svg" alt="heart liked">
                                 </div>  
-                            </div>
-                        </a>
+                            </div>                     
                     </article>
                 </div>
             </div>
