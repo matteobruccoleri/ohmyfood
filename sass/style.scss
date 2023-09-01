@@ -11,19 +11,32 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
  
 body {
     font-family: 'Roboto', sans-serif;
     position: relative;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    
 }
 
 a {
     text-decoration: none;
     color: #000;
+    font-family: 'Roboto', sans-serif;
+    width: max-content;
+    display: block;
+    margin: auto;
 }
- 
+
+button {
+    border: none;
+    background-color: transparent;
+    margin: auto;
+}
+    
+
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -75,7 +88,7 @@ a {
 }
 
 .btn-page {
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
 }
 .btn-page .btn {
     display: block;
