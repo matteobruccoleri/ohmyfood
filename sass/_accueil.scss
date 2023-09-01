@@ -253,12 +253,17 @@
             top: 15px;
             right: 15px;
         }
-        
-        img {
-            height: 230px;
-            width: 100%;
-            object-fit: cover;
+        .restaurant-link {
+            display: initial;
+            height: max-content;
+
+            img {
+                height: 230px;
+                width: 100%;
+                object-fit: cover;
+            }
         }
+        
 
         .restaurant-text {
             display: flex;
@@ -266,7 +271,12 @@
             justify-content: space-between;
             padding: 15px;
             color: #000;
+
+            .restaurant-link {
+              width: 90%;
+            }
         }
+
     }    
 }
 
